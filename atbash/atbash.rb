@@ -3,11 +3,7 @@ class Atbash
     first_13_letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"]
     last_13_letters =  ["z", "y", "x", "w", "v", "u", "t", "s", "r", "q", "p", "o", "n"]
 
-    if word == word.split.join
-      word = word
-    else
-      word = word.gsub!(/\W/, '')
-    end
+    word == word.split.join ? word : word = word.gsub!(/\W/, '')
 
     word.downcase.split('').map do |char|
       if first_13_letters.include?(char)
